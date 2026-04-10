@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array</title>
 </head>
 <body>
+    <!-- ARRAY -->
+
+
     <script>
-        
+        var data = ['Habib','Kamal','Jamal','Rab','Police','Army', 100, 200, 300];
+        document.write('Total index : ' + data.length);
+        document.write('<br/>');
+        for(index in data)
+    {
+        document.write('Index no : ' + index + 'value is : ' + data[index] + '<br/>')
+    }
     </script>
+
+
+    <!-- <script>
+        var student = [];
+        student ['name'] = 'Habib';
+        student ['age'] = 19;
+        document.write(student['age']);
+    </script> -->
+
+
 </body>
 </html>
