@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 100px;
+            width: 300px;
+            border-radius: 10px;
+            border: none;
+            font-size: larger;
+            margin: auto;
+        }
+        .div-one{
+            height: 300px;
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px 0px;
+            padding: 20px 0px;
+            border: 1px solid slategrey;
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <!-- =====Div color Change====== -->
+    <div class="div-one" id="divOne"></div>
+    
+    <div style="display: flex;">
+        <button type="button" id="redbtn">Red</button>
+        <button type="button" id="greenbtn">green</button>
+        <button type="button" id="bluebtn">blue</button>
+        <button type="button" id="defaultbtn">default</button>
+
+    </div>
+
+
+
+
+
+    <script>
+        var redbtn = document.getElementById('redbtn');
+        redbtn.onclick = function() {
+            var divOne = document.getElementById('divOne');
+            divOne.style.backgroundColor = 'red';
+        }
+
+        var greenbtn = document.getElementById('greenbtn');
+        greenbtn.onclick = function() {
+            var divOne = document.getElementById('divOne');
+            divOne.style.backgroundColor = 'green';
+        }
+
+        var bluebtn = document.getElementById('bluebtn');
+        bluebtn.onclick = function() {
+            var divOne = document.getElementById('divOne');
+            divOne.style.backgroundColor = 'blue';
+        }
+
+        var defaultbtn = document.getElementById('defaultbtn');
+        defaultbtn.onclick = function() {
+            var divOne = document.getElementById('divOne');
+            divOne.style.backgroundColor = 'silver';
+        }
+
+    </script>
+</body>
+</html>
