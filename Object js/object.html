@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+
+    <Script>
+
+            var data = 10; // Single variable
+            // document.write(data);
+
+            var data = [10, 20, 30];  // Array
+            // document.write(data[0]);
+
+            var data = {name: 'Abdul',agr:'24', city: 'Rajsahahi'} // Object
+            // document.write(data.name);
+
+
+            // Array of Object
+
+            var students = [
+                {name: 'Md Abdul Alim', mobile: '0123456789', email: 'abdulalimexample@gmail.com'},
+                {name: 'Md Hasan', mobile: '01223213489', email: 'hasanexample@gmail.com'},
+                {name: 'Md Abdul Alim', mobile: '0123456789', email: 'abdulalimexample@gmail.com'},
+                {name: 'Md Hasan', mobile: '01223213489', email: 'hasanexample@gmail.com'},
+                {name: 'Md Abdul Alim', mobile: '0123456789', email: 'abdulalimexample@gmail.com'},
+                {name: 'Md Hasan', mobile: '01223213489', email: 'hasanexample@gmail.com'},
+                {name: 'Md Abdul Alim', mobile: '0123456789', email: 'abdulalimexample@gmail.com'},
+                {name: 'Md Hasan', mobile: '01223213489', email: 'hasanexample@gmail.com'},
+                {name: 'Md Abdul Alim', mobile: '0123456789', email: 'abdulalimexample@gmail.com'},
+                {name: 'Md Hasan', mobile: '01223213489', email: 'hasanexample@gmail.com'},
+                {name: 'Md Abdul Alim', mobile: '0123456789', email: 'abdulalimexample@gmail.com'},
+                {name: 'Md Hasan', mobile: '01223213489', email: 'hasanexample@gmail.com'},
+            ];
+
+
+            // document.write(students[2].name);
+
+
+            for(key in students){
+                document.write(students[key].name + ' ' + students[key].mobile + ' ' + students[key].email+'<br/>');
+            }
+
+
+
+    </Script>
+</body>
+</html>
